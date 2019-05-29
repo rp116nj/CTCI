@@ -2,9 +2,9 @@
 
 // using another data structure
 const unique = str => {
-  let newObj = {};
+  let newObj = {};// creating a new object and storing the char as key
   for (let char of str) {
-    if (!newObj[char]) {
+    if (!newObj[char]) {//if key already present it is not unique
       newObj[char] = 1;
     } else {
       return false;
@@ -12,7 +12,8 @@ const unique = str => {
     return true;
   }
 }
-  console.log(unique('dabcdde'))
+console.log(unique('dabcdde'))
+  //
   // without using another data structure
   const unique1 = str1 => {
     if (str1.length > 128) return false; //128 is the number of ASCII characters
