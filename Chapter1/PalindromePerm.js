@@ -1,3 +1,4 @@
+//Given a string write a function to check if it is a permutation of a palindrome
 const palinPerm = str => {
   str = str.replace(/\s/g, '').toLowerCase();
   let newobj = {};
